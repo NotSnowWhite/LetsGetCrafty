@@ -48,7 +48,7 @@ h1 {
     border: none;
     font-size: 18px;
     border-radius: 5px;
-    padding: 2px 8px;
+    padding: 2px 6px;
     margin: 0 30px;
     text-align: center;
     text-decoration: none;
@@ -87,7 +87,7 @@ nav a {
     text-decoration: none;
     border: 5px dotted #d4d2e5;
     margin: 4px 0;
-    padding: 20px 50px;
+    padding: 10px 35px;
     border-radius: 5px;
 }
 
@@ -95,7 +95,6 @@ nav a:hover {
     background-color: #ffe5f0;
     color: #084503;
     text-decoration: underline 4px dotted #084503;
-
     border: 4px solid #d4d2e5;
     border-radius: 5px;
 }
@@ -117,24 +116,32 @@ h2 {
 
 .introduction {
     font-size: 20px;
-    margin-bottom: 40px;
+    margin: 0 auto 40px auto;
     text-align: center;
     border: 2px dashed #ffe5f0;
     padding: 20px;
+    width: fit-content;
+    justify-content: center;
 }
 
 h3 {
     background-color: #ff808c;
+    color: #ffe5f0;
     border-radius: 15px;
     font-size: 28px;
-    width: 300px;
+    width: fit-content;
+    padding: 10px 20px;
     margin: 0 auto;
     margin-bottom: 20px;
     text-align: center;
 }
 
-section {
-    
+/* || Gallery Styling */
+
+/* ||| Home Gallery */
+
+.gallery {
+
     display: grid;
     grid-template-columns: repeat(3, 400px);
     justify-content: center;
@@ -145,10 +152,143 @@ section {
 
 .galleryImage {
     background-color: #ff808c;
-
     width: 100%;
     height: 300px;
     border-radius: 10px;
+}
+
+/* ||| Yarn Gallery */
+
+.yarnGallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+
+.projectItem {
+    color: #084503;
+    padding: 20px;
+    width: 60%;
+    min-height: 400px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.projectItem:nth-child(even) {
+    /* Alternate layout for zigzag pattern */
+    flex-direction: row-reverse;
+}
+
+.projectFigure {
+    width: 40%;
+    margin: 0;
+    color: #d4d2e5;
+}
+
+.projectFigure h4 {
+    margin: 10px;
+    text-align: center;
+}
+
+.yarnGalleryImage {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    /* Scale images to fit container */
+    border-radius: 10px;
+}
+
+.projectDetails {
+    width: 60%;
+    color: #084503;
+    border: 12px double #ffe5f0;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+
+}
+
+.projectDescription {
+    background-color: #d4d2e5;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 0;
+    font-size: 18px;
+}
+
+
+/* || Contact Form Styling */
+
+form {
+    background-color: #ffe5f0;
+    color: #084503;
+    font-size: 18px;
+    width: 700px;
+    padding: 30px 20px 10px 20px;
+    border-radius: 10px;
+    margin: 10px auto;
+    border: 2px solid #d4d2e5;
+    box-shadow: 5px 3px 10px #d4d2e5;
+}
+
+form p {
+    text-align: right;
+    margin-top: 5px;
+}
+
+label {
+    display: inline-block;
+    width: 170px;
+    text-align: right;
+    margin-right: 10px;
+    margin-bottom: 15px;
+    vertical-align: top;
+
+}
+
+input,
+textarea {
+    display: inline-block;
+    width: 350px;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid #d4d2e5;
+    border-radius: 5px;
+}
+
+input[type="file"] {
+    color: #084503;
+    padding: 0;
+    border: none;
+    display: block;
+    position: relative;
+    left: 15%;
+    margin: 0 auto 20px auto;
+}
+
+label[for="attachment"] {
+    width: 100%;
+    padding: 15px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+button {
+    background-color: #ff808c;
+    color: #ffe5f0;
+    border: none;
+    font-size: 18px;
+    border-radius: 5px;
+    padding: 10px 20px;
+    display: block;
+    margin: 0 auto;
 }
 
 /* || Footer Styling  */
@@ -201,13 +341,14 @@ footer {
         grid-template-rows: repeat(3, auto);
         column-gap: 15px;
     }
-    
+
     h1 {
         font-size: 32px;
         padding-left: 40px;
     }
-    
-    .copyright, .socialButtons {
+
+    .copyright,
+    .socialButtons {
         margin-left: 40px;
         margin-right: 40px;
     }

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Let's Get Crafty! | Contact Us</title>
+    <link rel="icon" href="assets/icons/icons8-yarn-100.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Let's Get Crafty!<img src="assets/icons/icons8-yarn-100.png" alt="Yarn icon" class="icon"></h1>
+        <a href="contact.html" class="contactButton">Contact Us</a>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="yarn.html">Yarn</a></li>
+            <li><a href="clay.html">Clay</a></li>
+            <li><a href="paint.html">Paint</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>Contact Us</h2>
+        <p class="introduction">Have questions or feedback? We'd love to hear from you! Fill out the form below and
+            we'll get back to you as soon as possible.</p>
+        <form action="#" method="post" enctype="multipart/form-data"> <!-- enctype allows for file uploads -->
+            <label for="name">*Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">*Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="suggestions">*Suggestion/<br>Comments:</label>
+            <textarea id="suggestions" name="suggestions" rows="5" required></textarea>
+            <label for="attachment" >Image Attachment (optional):</label>
+            <!-- The accept attribute restricts file selection to images only -->
+            <input type="file" id="attachment" name="attachment" accept="image/*">
+            <button type="submit">Submit!</button>
+            <p> Fields with * are required.</p>
+        </form>
+    </main>
+
+    <footer>
+        <p class="copyright">&copy; 2026 Let's Get Crafty!</p>
+        <div class="footerButtons">
+            <a href="index.html">Home</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+        <div class="socialButtons">
+            <a href="https://www.pinterest.com" aria-label="Pinterest"> <img src="assets/icons/icons8-pinterest-48.png"
+                    alt="Pinterest logo">
+            </a>
+            <a href="https://www.linkedin.com/in/gabrielle-latch" aria-label="LinkedIn"> <img
+                    src="assets/icons/icons8-linkedin-48.png" alt="LinkedIn logo">
+            </a>
+            <a href="https://www.lokincity.com" aria-label="LokinCity"> <img src="assets/icons/icons8-universe-48.png"
+                    alt="LokinCity website">
+            </a>
+        </div>
+    </footer>
+</body>
+
+</html>
