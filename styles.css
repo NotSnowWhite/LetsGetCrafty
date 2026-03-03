@@ -267,6 +267,17 @@ h3 {
     width: 100%;
 }
 
+.galleryInstructions {
+    font-size: 20px;
+    background-color: #8dbe83;
+    color: #ffe5f0;
+    font-weight: bold;
+    margin: 0 auto 40px auto;
+    width: fit-content;
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-align: center;
+}
 
 .projectItem {
     color: #084503;
